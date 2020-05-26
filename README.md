@@ -1,7 +1,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/sykuang/wine-x11-novnc-python3.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/sykuang/wine-x11-novnc-python3?colorB=dfb317)
-![Docker Automated build](https://img.shields.io/docker/automated/sykuang/wine-x11-novnc-python3)
-![Docker Build Status](https://img.shields.io/docker/build/sykuang/wine-x11-novnc-python3)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/sykuang/wine-x11-novnc-python3)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/sykuang/wine-x11-novnc-python3)
 # Run A windows application with docker
 Using the docker image to run windows application like smartget on my Synology Nas(DS 916+)
 
@@ -11,11 +11,11 @@ Using the docker image to run windows application like smartget on my Synology N
 ### Run image as Server
    * Run
      ```bash
-     docker run -p 8080:8080 -p 8081:22 sykuang/wine-python
+     docker run -p 8080:8080 -p 8081:22 sykuang/wine-x11-novnc-python3
      ```
    * Run with Tranditional Chinese Support
      ```bash
-     docker run -p 8080:8080 -p 8081:22  -e LANG=zh_TW.UTF-8 -e LC_ALL=zh_TW.UTF-8 sykuang/wine-python
+     docker run -p 8080:8080 -p 8081:22  -e LANG=zh_TW.UTF-8 -e LC_ALL=zh_TW.UTF-8 sykuang/wine-x11-novnc-python3
      ```
    * Adanvace Run
      ```bash
