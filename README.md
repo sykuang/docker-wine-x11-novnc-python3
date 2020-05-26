@@ -1,7 +1,7 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/sykuang/wine-python.svg)
-![Docker Stars](https://img.shields.io/docker/stars/sykuang/wine-python?colorB=dfb317)
-[![Docker Automated build](https://img.shields.io/docker/automated/sykuang/python.svg)](https://hub.docker.com/r/sykuang/wine-python/)
-[![Docker build](https://img.shields.io/docker/build/sykuang/wine-python.svg)](https://hub.docker.com/r/sykuang/wine-python/)
+![Docker Pulls](https://img.shields.io/docker/pulls/sykuang/wine-x11-novnc-python3.svg)
+![Docker Stars](https://img.shields.io/docker/stars/sykuang/wine-x11-novnc-python3?colorB=dfb317)
+![Docker Automated build](https://img.shields.io/docker/automated/sykuang/wine-x11-novnc-python3)
+![Docker Build Status](https://img.shields.io/docker/build/sykuang/wine-x11-novnc-python3)
 # Run A windows application with docker
 Using the docker image to run windows application like smartget on my Synology Nas(DS 916+)
 
