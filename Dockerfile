@@ -22,8 +22,7 @@ RUN WINEARCH=win32 wine wineboot && \
     && \
     xvfb-run sh -c "\
     wine python-${PYVER}.exe /quiet TargetDir=C:\\Python37-32 \
-    Include_doc=0 InstallAllUsers=1 PrependPath=1; \
-    wineserver -w" && \
+    Include_doc=0 InstallAllUsers=1 PrependPath=1;" && \
     unzip upx*.zip && \
     mv -v upx*/upx.exe ${WINEPREFIX}/drive_c/windows/ && \
     cd .. && rm -Rf helper
