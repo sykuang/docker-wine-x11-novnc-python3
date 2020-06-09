@@ -21,8 +21,9 @@ RUN WINEARCH=win32 wine wineboot && \
     https://github.com/upx/upx/releases/download/v3.95/upx-3.95-win32.zip \
     && \
     xvfb-run sh -c "\
-    wine python-${PYVER}.exe /quiet TargetDir=C:\\Python37-32 \
-    Include_doc=0 InstallAllUsers=1 PrependPath=1;" && \
+    wine python-${PYVER}.exe /quiet TargetDir=C:\\Python3 \
+    Include_doc=0 InstallAllUsers=1 PrependPath=1; && \
+    wineserver -w" && \
     unzip upx*.zip && \
     mv -v upx*/upx.exe ${WINEPREFIX}/drive_c/windows/ && \
     cd .. && rm -Rf helper
